@@ -9,6 +9,8 @@
     <modules>
         <module>spring-ioc-xml01</module>
         <module>spring-ioc-xml-practice-02</module>
+        <module>spring-ioc-practice-03</module>
+        <module>spring-ioc-practice-04</module>
     </modules>
     <packaging>pom</packaging>
 
