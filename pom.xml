@@ -9,40 +9,61 @@
     <modules>
         <module>spring-ioc-xml01</module>
         <module>spring-ioc-xml-practice-02</module>
+        <module>spring-aop-annotation-05</module>
     </modules>
     <packaging>pom</packaging>
 
     <dependencies>
-        <!--spring context依赖-->
-        <!--当你引入Spring Context依赖之后，表示将Spring的基础依赖引入了-->
+        <!-- Spring 核心 -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>6.0.6</version>
         </dependency>
-        <!--junit5测试-->
+
+        <!-- Spring JDBC -->
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.3.1</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>6.0.6</version>
         </dependency>
 
+        <!-- Spring AOP -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.33</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>6.0.6</version>
         </dependency>
 
+        <!-- Druid 数据源 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.1.10</version>
         </dependency>
 
+        <!-- MySQL 驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
+
+        <!-- ✅ Spring Test（要与 Spring 6.x 对应） -->
         <dependency>
             <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
+            <artifactId>spring-test</artifactId>
             <version>6.0.6</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- ✅ JUnit 5 最新版本 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
+
 </project>
